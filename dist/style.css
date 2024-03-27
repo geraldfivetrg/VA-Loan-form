@@ -1,0 +1,95 @@
+ path {
+    stroke: white;
+    fill:#80a052 !important;
+
+    transition: fill .4s ease;
+    transform-origin: center center;
+}
+
+path:hover {
+    fill: #f9e02e !important;
+    cursor: pointer;
+    transform: scale(1.005, 1.005);
+}
+
+#map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#us-map {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    right: 25px;
+
+}
+
+#details-box {
+    box-shadow: 0px 7px 40px rgba(0, 0, 0, 0.7);
+    opacity: 0%;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 24px;
+    position: fixed;
+    color: white;
+    font-family: "Poppins";
+    background-color: black;
+    width: fit-content;
+    transform: translateX(-50%);
+    transition: opacity .4s ease;
+    z-index: 1;
+}
+
+#stateDropdown {
+    display: block;
+    position: relative;
+    font-size: 1.25em; /* 20px assuming base font-size is 16px */
+    font-family: "Poppins";
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+@media (max-width: 600px) {
+    #stateDropdown {
+      font-size: 1em;
+    }
+  }
+
+/* Increase the font size */
+#page2 h3, #page2 input, #page3 h3, #page3 input, #page4 h3, #page4 input, #page4 button, #page5 h2, #page5 input, #page6 h3, #page6 input, #page7 h3, #page7 input, #page8 label, #page8 input, #page8 button {
+    font-size: 1.25em; /* 20px assuming base font-size is 16px */
+    font-family: "Poppins";
+}
+
+/* Change the border color of the selected choices */
+#page2 input:active, #page3 input:active, #page4 input:active, #page5 input:active, #page6 input:active, #page7 input:active, #page8 input:active {
+    border-color: #80a052;
+}
+
+/* Change the border color on hover */
+#page2 input:hover, #page3 input:hover, #page4 input:hover, #page5 input:hover, #page6 input:hover, #page7 input:hover, #page8 input:hover, #page9 input:hover {
+    border-color: #80a052;
+    background-color: #80a052;
+    color: white;
+}    
+
+.page input {
+    margin-bottom: 10px;
+}
+
+.error {
+    color: red;
+}  
+.page {
+    display: none;
+  }
+
+.page.active {
+    display: block;
+  }
